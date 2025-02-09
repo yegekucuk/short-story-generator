@@ -7,7 +7,7 @@ import os
 
 # Number of stories used.
 TOTAL_NUM_STORIES = len(os.listdir("./dataset"))
-NUM_STORIES = 10
+NUM_STORIES = TOTAL_NUM_STORIES
 # Window size
 WINDOW_SIZE = 5
 
