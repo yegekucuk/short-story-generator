@@ -6,6 +6,7 @@ from tensorflow.keras.utils import to_categorical # type: ignore
 from preprocessing import *
 from time import sleep
 import random
+from main import LENGTH_EACH_STORY, NUMBER_OF_STORIES_TO_GENERATE
 
 # Loading the dictionary
 dictionary_list = load_dictionary()
@@ -60,4 +61,4 @@ def generate_story(length=100, num_of_stories=1):
       file.write(story_string)
     
 
-generate_story(100, 2)
+generate_story(LENGTH_EACH_STORY, NUMBER_OF_STORIES_TO_GENERATE)
